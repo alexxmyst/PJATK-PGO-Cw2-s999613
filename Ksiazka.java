@@ -26,4 +26,17 @@ public class Ksiazka {
     public boolean isDostepna() {
         return dostepna;
     }
+
+    public void wypiszInfo() {
+        System.out.println("Tytuł: " + tytul + " Autor: " + autor + " Liczba stron: " + liczbaStron + " Czy dostępna: " + dostepna );
+
+    }
+
+    public void wypozycz() {
+        this.dostepna = false;
+    }
+
+    public void zwroc() {
+        this.dostepna = true;
+    }
 }

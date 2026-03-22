@@ -10,6 +10,34 @@ public class Czytelnik {
         this.naziwsko = naziwsko;
         this.imie = imie;
     }
-    
+
+
+    public void wypiszDane(){
+        System.out.println("Imie: " + imie  + " Nazwisko: " + naziwsko + " Numer karty: " + nrKarty + " Liczba wypozyczen: " + liczbaWyp);
+
+    }
+
+    public int zwiekszLiczbeWypozyczen(){
+        if (this.liczbaWyp >= 0) {
+            return this.liczbaWyp += 1;
+        }
+        return 0;
+    }
+
+    public int zmniejszLiczbeWypozyczen(){
+        if (this.liczbaWyp >= 0) {
+            return this.liczbaWyp -= 1;
+        }
+        return 0;
+    }
+
+
+
+
+
+
+
+
+
 
 }
