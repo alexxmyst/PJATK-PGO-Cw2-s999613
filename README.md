@@ -1,6 +1,6 @@
-# Projekt Biblioteka
+# Projekt Biblioteki
 
 ```
-Projekt zakłada stworzenie MiniBiblioteki.
+Projekt MiniBiblioteki. Składa się z klas: Książka, Czytelnik, Biblioteka.
 ```
 

@@ -1,11 +1,5 @@
 package src;
 
-import src.Biblioteka;
-import src.Czytelnik;
-import src.Ksiazka;
-
-import java.util.concurrent.Callable;
-
 public class Main{
 public static void main(String[] args) throws IllegalAccessException {
 
@@ -40,6 +34,31 @@ public static void main(String[] args) throws IllegalAccessException {
     System.out.println("Następnie zmniejszona liczba wyp. Jana: " + czytelnik.zmniejszLiczbeWypozyczen());
 
     // scenariusz biblioteki
+    System.out.println("Scenariusz metod biblioteki");
+
+    Biblioteka biblioteka = new Biblioteka(3);
+    biblioteka.dodajKsiazke(ksiazka2);
+    biblioteka.dodajKsiazke(ksiazka1);
+    biblioteka.dodajKsiazke(ksiazka3);
+
+    biblioteka.wypiszDostepneKsiazki();
+    System.out.println("Liczba dostępnych książek: " + biblioteka.policzDostepneKsiazki());
+
+    // wypożyczenie
+    System.out.println("Książka wypożyczona: ");
+    ksiazka1.wypiszInfo();
+    czytelnik.wypiszDane();
+    biblioteka.wypozyczKsiazke("wuther", czytelnik);
+    ksiazka1.wypiszInfo();
+    czytelnik.wypiszDane();
+
+    // zwrócenie
+    System.out.println("Książka zwrócona: ");
+    biblioteka.zwrocKsiazke("wuther", czytelnik);
+    ksiazka1.wypiszInfo();
+    czytelnik.wypiszDane();
+
+
 
 
 
