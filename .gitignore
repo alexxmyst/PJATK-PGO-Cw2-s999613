@@ -8,5 +8,6 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
-/.idea
-/pgo-cw2.iml
+/.idea/
+pgo-cw2.iml
+\\wsl.localhost\Ubuntu\home\alex\pgo-cw2\pgo-cw2.iml
